@@ -4,7 +4,7 @@ import { About, Footer, Header, Hero, Menu, Reservation } from "@/components";
 
 export default function Home() {
   return (
-    <main className="relative ">
+    <main>
       <Header />
       <Hero />
       <Menu />

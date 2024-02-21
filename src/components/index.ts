@@ -7,7 +7,7 @@ export * from './menu/Menu'
 export * from './reservation/Reservation'
 export * from './about/About'
 export * from './footer/Footer'
-export * from './map/Map'
+
 
 
 

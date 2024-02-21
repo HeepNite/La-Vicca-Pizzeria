@@ -7,7 +7,7 @@ export const Reservation = () => {
     return (
         <section id="Reservation" className="w-full overflow-hidden relative top-[20rem] xl:top-[2rem] flex flex-col items-center xl:items-end xl:justify-end">
             <motion.article 
-            className=" bg-black text-white w-[30rem] h-[45rem] xl:h-[35rem] z-30 xl:w-[40rem] absolute left-0 xl:left-[25rem] ml-6 xl:top-[10rem] top-[15rem] p-10 flex flex-col"
+            className=" bg-black text-white w-[21.5rem] h-[45rem] xl:h-[35rem] z-30 xl:w-[40rem] absolute left-0 xl:left-[25rem] ml-6 xl:top-[10rem] top-[15rem] p-10 flex flex-col"
             variants={fadeIn('right', 0.8)}
             initial='hidden'
             whileInView={'show'}

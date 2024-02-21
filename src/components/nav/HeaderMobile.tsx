@@ -4,6 +4,7 @@ import { useState } from "react"
 
 import Image from "next/image"
 import Link from "next/link"
+import { Link as ScrollLink } from 'react-scroll';
 
 import { Button } from '@/components'
 import { LinksMenu } from "@/lib"
@@ -42,13 +43,22 @@ export const HeaderMobile = () => {
             <li key={key} >
               <div className="flex items-center jus gap-5 w-full ">
                 <span className="text-3xl">{links.icon}</span>
-                <h2>
-                  {links.name}
-                </h2>
+                <ScrollLink to={links.path} smooth={true} spy={true} offset={links.offset} duration={500} href={links.path} >
+                  <h2 onClick={() => setIsOpen(false)}>
+                    {links.name}
+                  </h2>
+                </ScrollLink>
               </div>
             </li>
           ))}
+
+          <ScrollLink to="Reservation" smooth={true} spy={true} offset={-50} duration={500} className=" w-full xl:flex justify-end">
+
+            <Button size='sm'>Reservar una mesa</Button>
+
+          </ScrollLink>
         </ul>
+
       </aside>
     </section>
   )

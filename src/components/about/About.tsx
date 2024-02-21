@@ -3,12 +3,12 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../variants';
-import { Map } from '@/components';
 
 export const About = () => {
     return (
         <section id='About' className=" xl:mt-[0rem] xl:top-[11rem] top-[13rem] my-[10rem] overflow-hidden relative flex">
-            <div className=" hidden xl:block bg-reservation-bard bg-no-repeat bg-cover w-[25.5rem] self-stretch "/>
+
+            <div className=" hidden xl:block bg-reservation-bard bg-no-repeat bg-cover w-[25.45rem] self-stretch "/>
 
             <div className="w-full flex gap-10 pb-[5rem]  xl:justify-end">
                 <motion.div
