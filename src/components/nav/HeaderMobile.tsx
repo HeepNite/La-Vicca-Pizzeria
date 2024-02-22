@@ -52,9 +52,9 @@ export const HeaderMobile = () => {
             </li>
           ))}
 
-          <ScrollLink to="Reservation" smooth={true} spy={true} offset={-50} duration={500} className=" w-full xl:flex justify-end">
+          <ScrollLink to="Reservation" smooth={true} spy={true} offset={-50} duration={500} className=" w-full xl:flex justify-end mt-16">
 
-            <Button size='sm'>Reservar una mesa</Button>
+            <Button  onClick={() => setIsOpen(false)} size='sm'>Reservar una mesa</Button>
 
           </ScrollLink>
         </ul>
